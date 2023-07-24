@@ -1,0 +1,28 @@
+.info__block {
+    cursor: pointer;
+    border-radius: 8px;
+    border: none;
+    background-color: hsla(0,0%,100%,.05);
+    color: var(--text-white);
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 64px;
+    padding: 16px;
+    flex: 1;
+    min-width: 200px;
+    max-width: 240px;
+}
+
+.info__block:hover {
+    background-color: rgba(32,33,35, 1);
+}
+
+.info__block.disabled:hover {
+    background-color: hsla(0,0%,100%,.05);
+}
+
+.info__block.disabled {
+    cursor: default;
+}

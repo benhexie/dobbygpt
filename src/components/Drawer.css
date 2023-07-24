@@ -1,0 +1,113 @@
+.drawer__container {
+    width: 310px;
+    background-color: rgba(32,33,35, 1);
+    display: flex;
+    flex-flow: column;
+    padding: var(--space);
+}
+
+.drawer__header {
+    display: flex;
+    gap: 8px;
+}
+
+.drawer__btn {
+    height: 44px;
+    border-radius: 8px;
+    color: var(--text-white);
+    background-color: transparent;
+    align-items: center;
+    cursor: pointer;
+    border: 1px solid hsla(0,0%,100%,.2);
+}
+
+.newchat__btn {
+    padding-left: 16px;
+    font-size: 16px;
+    flex: 1;
+    display: flex;
+    gap: 16px;
+    font-size: 0.875rem;
+    font-weight: 500;
+}
+
+.closedrawer__btn {
+    width: 44px;
+}
+
+.closedrawer__btn svg {
+    transform: scale(1.2);
+    font-weight: normal;
+}
+
+.drawer__main {
+    flex: 1;
+}
+
+.drawer__footer {
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+    color: var(--text-white);
+    padding: 8px;
+    gap: 8px;
+}
+
+.drawer__line {
+    background-color: hsla(0,0%,100%,.2);
+    height: .075px;
+    width: 100%;
+}
+
+.footer__btn {
+    border-radius: 8px;
+    padding-block: 12px;
+    padding-inline: 8px;
+}
+
+.footer__btn:hover {
+    background-color: rgba(52, 53, 65, 1);
+}
+
+.drawer__upgrade__btn {
+    display: flex;
+    flex-flow: row;
+    gap: 8px;
+    align-items: center;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.label__new {
+    margin-left: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    color: rgba(52, 53, 65, 1);
+    background-color: rgba(250, 230, 158, 1);
+    width: 40px;
+    font-size: small;
+    font-weight: 500;
+}
+
+.drawer__profile__btn {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    cursor: pointer;
+}
+
+.drawer__profile__image__container {
+    width: 30px;
+    height: 24px;
+    overflow: hidden;
+}
+
+.drawer__profile__image {
+    width: 100%;
+}
+
+.drawer__profile__btn__icon {
+    margin-left: auto;
+}

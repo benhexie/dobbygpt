@@ -1,0 +1,143 @@
+.dashboard__main__container {
+    width: 100%;
+    background-color: rgba(52, 53, 65, 1);
+    display: flex;
+    flex-flow: column;
+    gap: 64px;
+    padding: 24px;
+    height: 100vh;
+}
+
+.dashboard__main__header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.gpt-model__btn__container {
+    width: 320px;
+    height: 52px;
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 8px;
+    padding: 4px;
+    background-color: rgba(32,33,35, 1);
+    border-radius: 12px;
+}
+
+.gpt-model__btn {
+    flex: 1;
+    display: flex;
+    justify-content: space-around;
+    display: flex;
+    align-items: center;
+    padding-inline: 24px;
+    border-radius: 12px;
+    background-color: rgba(64,65,79, 1);
+    color: var(--text-white);
+    border: none;
+    cursor: pointer;
+    font-weight: 500;
+    transition: all 100ms;
+}
+
+.gpt-model__btn p {
+    font-size: 14px;
+}
+
+.gpt-model__btn:nth-of-type(2) p {
+    margin-right: 8px;
+}
+
+.gpt4-model__btn {
+    background-color: transparent;
+    color: var(--inactive-color);
+}
+
+.gpt4-model__btn:hover p {
+    color: white;
+}
+
+.gpt4-model__btn:hover svg:first-of-type {
+    color: rgb(225, 0, 255);
+}
+
+.gpt-model__btn:first-of-type:hover ~ button {
+    background-color: rgba(52, 53, 65, 0.7);
+}
+
+.dashboard__main__body {
+    color: var(--text-white);
+    display: flex;
+    flex-flow: column;
+    gap: inherit;
+    height: 100%;
+}
+
+.dashboard__info__container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.dashboard__info__block__container {
+    max-width: 700px;
+    width: 100%;
+    display: flex;
+    gap: 16px;
+}
+
+.info__block__container {
+    display: flex;
+    flex-flow: column;
+    gap: 16px;
+}
+
+.dashboard__footer {
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    max-width: 800px;
+    align-self: center;
+    gap: 8px;
+    margin-top: auto;
+}
+
+.dashboard__input__container {
+    width: 100%;
+    display: flex;
+    height: 56px;
+    background-color: rgba(64, 65, 79, 1);
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    padding-inline: 16px;
+    gap: 8px;
+}
+
+.dashboard__input {
+    background-color: inherit;
+    border: none;
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+    outline: none;
+    color: white;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.dashboard__send__btn {
+    width: 36px;
+    color: rgba(172, 172, 190, 0.5);
+    cursor: pointer;
+    padding-inline: 8px;
+}
+
+.dashboard__footer__text {
+    color: var(--text-white);
+    font-size: small;
+}
+
+.dashboard__footer__text a {
+    color: var(--text-white);
+}
