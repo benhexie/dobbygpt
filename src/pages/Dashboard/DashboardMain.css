@@ -201,7 +201,7 @@
         width: 100%;
         flex-flow: column;
         align-items: center;
-        margin-bottom: 64px;
+        margin-bottom: 120px;
     }
 
     .dashboard__main__body {
