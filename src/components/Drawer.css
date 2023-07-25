@@ -1,9 +1,65 @@
 .drawer__container {
-    width: 310px;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    z-index: 10;
+}
+
+.drawer__close {
+    display: none;
+    height: 40px;
+    width: 40px;
+    background-color: transparent;
+    border: 3px solid var(--text-white);
+}
+
+.drawer__close.closed {
+    border: none;
+}
+
+.drawer__close svg {
+    color: var(--text-white);
+    transform: scale(1.45);
+}
+
+.drawer__under__btn {
+    z-index: 2;
+    position: absolute;
+    top: 8px;
+    left: 8px;
+}
+
+.drawer {
+    width: 280px;
+    height: 100%;
     background-color: rgba(32,33,35, 1);
     display: flex;
     flex-flow: column;
     padding: var(--space);
+    transition: width 300ms;
+
+}
+
+.drawer.closed {
+    padding: 0;
+    width: 0;
+    overflow-x: hidden;
+}
+
+.drawer__background {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.25);
+    pointer-events: all;
+    transition: all 300ms;
+    z-index: 1;
+}
+
+.drawer__background.closed {
+    background-color: rgba(255, 255, 255, 0);
+    pointer-events: none;
 }
 
 .drawer__header {
@@ -29,6 +85,7 @@
     gap: 16px;
     font-size: 0.875rem;
     font-weight: 500;
+    white-space: nowrap;
 }
 
 .closedrawer__btn {
@@ -55,7 +112,7 @@
 
 .drawer__line {
     background-color: hsla(0,0%,100%,.2);
-    height: .075px;
+    height: 1px;
     width: 100%;
 }
 
@@ -63,6 +120,7 @@
     border-radius: 8px;
     padding-block: 12px;
     padding-inline: 8px;
+    white-space: nowrap;
 }
 
 .footer__btn:hover {
@@ -110,4 +168,28 @@
 
 .drawer__profile__btn__icon {
     margin-left: auto;
+}
+
+@media screen and (max-width: 900px) {
+    .drawer__background {
+        display: inline;
+        top: 0;
+        left: 0;
+    }
+
+    .drawer__container {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    .drawer__close {
+        display: block;
+        margin: 8px;
+        cursor: pointer;
+    }
+
+    .closedrawer__btn {
+        display: none;
+    }
 }
