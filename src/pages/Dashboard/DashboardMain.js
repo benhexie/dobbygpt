@@ -16,8 +16,12 @@ function DashboardMain() {
   const textareaChange = (event) => {
     const textarea = textareaRef.current;
     setText(event.target.value);
-    textarea.style.paddingTop = "16px";
     textarea.style.height = 'auto';
+    textarea.style.paddingTop = "16px";
+    if (!event.target.value) {
+      textarea.style.height = '24px';
+      textarea.style.paddingTop = "4px";
+    }
     textarea.style.height = `${textarea.scrollHeight < 200 ? textarea.scrollHeight + 2 : 200}px`;
   };
   
