@@ -1,4 +1,4 @@
-import React, { Fragment, useState } from 'react'
+import React, { Fragment, useEffect, useState } from 'react'
 import "./Drawer.css"
 import { CloseSidebar } from '../assets'
 import { FaEllipsisH, FaPlus, FaUser } from "react-icons/fa"
@@ -8,6 +8,12 @@ import ProfileImage from "../assets/images/WhatsApp Image 2023-05-25 at 23.28.34
 function Drawer() {
 
   const [drawerOpen, setDrawerOpen] = useState(true);
+
+  useEffect(() => {
+    if (window.innerWidth <= 960) {
+      setDrawerOpen(false);
+    }
+  }, [])
 
   return (
     <>

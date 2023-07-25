@@ -170,7 +170,7 @@
     margin-left: auto;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 960px) {
     .drawer__background {
         display: inline;
         top: 0;

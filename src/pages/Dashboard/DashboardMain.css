@@ -127,6 +127,7 @@
     width: 100%;
     display: flex;
     gap: 16px;
+    flex-flow: row;
 }
 
 .info__block__container {
@@ -136,7 +137,6 @@
 }
 
 .dashboard__footer {
-    width: 100%;
     display: flex;
     flex-flow: column;
     max-width: 800px;
@@ -194,4 +194,22 @@
 
 .dashboard__footer__text a {
     color: var(--text-white);
+}
+
+@media screen and (max-width: 700px) {
+    .dashboard__info__block__container {
+        width: 100%;
+        flex-flow: column;
+        align-items: center;
+        margin-bottom: 64px;
+    }
+
+    .dashboard__main__body {
+        overflow-y: auto;
+        margin-bottom: 80px;
+    }
+
+    .info__block__container {
+        width: 100%;
+    }
 }
