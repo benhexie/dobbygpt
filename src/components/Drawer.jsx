@@ -2,8 +2,8 @@ import React, { Fragment, useEffect, useState } from 'react'
 import "./Drawer.css"
 import { CloseSidebar } from '../assets'
 import { FaEllipsisH, FaPlus, FaUser } from "react-icons/fa"
-import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai"
 import ProfileImage from "../assets/images/WhatsApp Image 2023-05-25 at 23.28.34.jpeg"
+import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai"
 
 function Drawer() {
 
@@ -17,7 +17,10 @@ function Drawer() {
 
   return (
     <>
-      <div className={`drawer__background ${!drawerOpen && "closed"}`} />
+      <div 
+        className={`drawer__background ${!drawerOpen && "closed"}`} 
+        onClick={() => setDrawerOpen(false)} 
+      />
       <button className='drawer__btn closedrawer__btn drawer__under__btn' onClick={() => setDrawerOpen(prev => !prev)}>
         <CloseSidebar />
       </button>
